@@ -62,7 +62,9 @@ python train.py --file=./data/bank.csv --type=num --format=csv --sens=low --epoc
 ```
 
 Before that you have to put the data training data in the following directory : 
+
 ./data for numeric data
+
 ./data/iamges for images data
 
 then use the following options to be able to run properly the model:
