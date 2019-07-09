@@ -68,13 +68,21 @@ Before that you have to put the data training data in the following directory :
 then use the following options to be able to run properly the model:
 
 --file : identify where the data for training is stored (not forget to add at the end the file name and file extension.
+
 --type : identify which type of data its, 2 choices from num or image (num stands for numeric)
+
 --format : identify the file format  ONLY for numerical data (csv,hdf,excel,parquet,json)
+
 --sens : identify the cutoff of the model. (it helps fix a threshold of detection). low means that you allow more false positive. high means you allow more false negative. med means between low and high.
+
 --epoch : identify the number of epochs that will be performed by the model. Or the number of times the model will see the data. The default is set at 1.
+
 --imgsize1 : identify the image size weight for the case. This option is valid for the case where type is image.
+
 --imgsize2 : identify the image size height for the case. This option is valid for the case where type is image.
+
 --gray : identify is the image is gray scale. This option is valid for the case where type is image. Default is set to false.
+
 --gpu : identify if gpu acceleration will be used to train the model. Default is set to false.
 
 ## Scoring
@@ -86,8 +94,11 @@ Note that before evaluating (scoring), you need to train the model first.
 python evaluate.py --file=./data/bank.csv --type=num --format=csv
 ```
 For scoring the data you need to set up the following options :
+
 --file : where the data to score is stored
+
 --type : num or image
+
 --format : for numerical to know if the data is csv, hdf, parquet, excel, json
 
 ## Examples
@@ -95,5 +106,7 @@ For scoring the data you need to set up the following options :
 In the repo, you have three examples, to run:
 
 ./data/bank.csv for fraud detection in banking
+
 ./data/images for image anomaly detection on MNIST data
+
 ./data/iot.csv for internet of things and sensor data anomaly detection
