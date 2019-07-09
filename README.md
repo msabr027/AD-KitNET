@@ -12,3 +12,10 @@ The main advantage is the fact that no label is needed on data. You present the 
 
 To find out more about the original developpement on the tool follow this link : https://github.com/ymirsky/KitNET-py
 
+# Setup
+
+To be able to use the tool, the requirements.txt contains the necessary dependencies to use the tool.
+
+```
+pip install requirements.txt
+```
