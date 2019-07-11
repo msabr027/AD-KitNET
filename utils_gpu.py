@@ -21,7 +21,7 @@ def parser_run_model():
             choices=['num', 'image', 'text'])
     parser.add_argument('--format', help='file format',
             default='num',
-            choices=['csv', 'hdf', 'excel','parquet','json'])
+            choices=['csv', 'hdf', 'excel','parquet','json','png','jpg'])
     parser.add_argument('--sens', help='cutoff threshold level',
             default='low',
             choices=['low', 'med', 'high'])
