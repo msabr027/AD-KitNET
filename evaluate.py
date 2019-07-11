@@ -67,7 +67,7 @@ if __name__ == "__main__":
         train_image = []
         train_image = pd.DataFrame(train_image)
         for i in range(len(data_list)):
-            img = image.load_img('./data/images/224_cat.png', target_size=(settings["imgsize1"],settings["imgsize2"],1), grayscale=settings["gray"])
+            img = image.load_img('./data/images/' + str(i+1) +  '.' + settings['format'], target_size=(settings["imgsize1"],settings["imgsize2"],1), grayscale=settings["gray"])
             img = image.img_to_array(img)
             img = img/255
             img = img.reshape(-1, img.shape[0]*img.shape[1]*img.shape[2])
